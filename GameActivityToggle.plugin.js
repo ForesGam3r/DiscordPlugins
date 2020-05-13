@@ -192,10 +192,6 @@ class GameActivityToggle {
 
     this.btnReference.setAttribute("aria-checked", `${this.gameActivity ? "true" : "false"}`);
 
-    // Play the mute / unmute sound on toggle.
-    if (this.gameActivity) {
-      this.soundsReference.playSound("unmute", 0.4);
-    } else this.soundsReference.playSound("mute", 0.4);
   }
 
   // On mouse over swap icons to highlight and display tooltip in correct position.
